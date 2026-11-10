@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" role="img" aria-labelledby="titulo descripcion">
+  <title id="titulo">Disco de vinilo</title>
+  <desc id="descripcion">Ilustración monocromática de un disco con surcos y una nota musical.</desc>
+  <defs>
+    <linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#202020"/>
+      <stop offset="1" stop-color="#090909"/>
+    </linearGradient>
+    <linearGradient id="disco" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#292929"/>
+      <stop offset=".55" stop-color="#111"/>
+      <stop offset="1" stop-color="#303030"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="440" rx="24" fill="url(#fondo)"/>
+  <path d="M0 330h640M0 110h640M160 0v440M480 0v440" stroke="#fff" stroke-opacity=".045"/>
+  <circle cx="266" cy="220" r="157" fill="url(#disco)" stroke="#eee" stroke-opacity=".9" stroke-width="3"/>
+  <circle cx="266" cy="220" r="137" fill="none" stroke="#aaa" stroke-opacity=".22" stroke-width="2"/>
+  <circle cx="266" cy="220" r="119" fill="none" stroke="#aaa" stroke-opacity=".22" stroke-width="2"/>
+  <circle cx="266" cy="220" r="101" fill="none" stroke="#aaa" stroke-opacity=".22" stroke-width="2"/>
+  <circle cx="266" cy="220" r="83" fill="none" stroke="#aaa" stroke-opacity=".22" stroke-width="2"/>
+  <circle cx="266" cy="220" r="63" fill="#d8d8d8"/>
+  <circle cx="266" cy="220" r="47" fill="#161616"/>
+  <circle cx="266" cy="220" r="7" fill="#fff"/>
+  <path d="M251 190c8-10 21-17 36-18" fill="none" stroke="#fff" stroke-linecap="round" stroke-opacity=".65" stroke-width="4"/>
+  <path d="M463 138v149c0 20-16 35-36 35s-35-13-35-30 15-30 35-30c7 0 13 2 18 5v-95l92-19v134c0 20-16 35-36 35s-35-13-35-30 15-30 35-30c7 0 13 2 18 5v-91l-56 12z" fill="#f5f5f5"/>
+  <path d="M92 372h456" stroke="#fff" stroke-opacity=".17"/>
+  <circle cx="92" cy="372" r="4" fill="#fff"/>
+  <circle cx="548" cy="372" r="4" fill="#fff"/>
+</svg>
