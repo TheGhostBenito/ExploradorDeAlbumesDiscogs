@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactá al equipo del Explorador de álbumes y compartí tus consultas o sugerencias musicales.">
+    <title>Contacto · Explorador de álbumes</title>
+    <link rel="stylesheet" href="CSS/visuales.css?v=contacto1">
+    <script src="Javascript/contacto.js" defer></script>
+</head>
+<body>
+    <div id="contenedor" class="contacto-layout">
+        <header class="site-header">
+            <nav class="navegacion-pagina" aria-label="Navegación principal">
+                <a href="index.html">Inicio</a>
+                <a href="Equipo.html">Sobre el equipo</a>
+                <a href="contacto.html" aria-current="page">Contacto</a>
+            </nav>
+        </header>
+
+        <aside id="left-column" class="contacto-intro">
+            <header>
+                <p class="eyebrow">ESTAMOS EN SINTONÍA</p>
+                <h1>Hablemos de música</h1>
+                <p class="intro">¿Tenés una consulta, una sugerencia o un lanzamiento para recomendarnos? Escribinos.</p>
+            </header>
+
+            <figure class="contacto-figura">
+                <img src="../Imagenes/vinilo-contacto.svg" alt="Ilustración en blanco y negro de un disco de vinilo y una nota musical">
+                <figcaption>Una buena conversación también tiene ritmo.</figcaption>
+            </figure>
+        </aside>
+
+        <main id="formulario-contacto" class="formulario-contacto">
+            <div class="contacto-cabecera">
+                <p class="eyebrow">FORMULARIO DE CONTACTO</p>
+                <h2>Contanos qué tenés en mente</h2>
+                <p>Completá los campos obligatorios. La validación se realiza en esta página.</p>
+            </div>
+
+            <form id="contactForm" novalidate>
+                <div class="campo-contacto">
+                    <label for="nombre">Nombre y apellido <span aria-hidden="true">*</span></label>
+                    <input id="nombre" name="nombre" type="text" autocomplete="name" minlength="2" required>
+                </div>
+
+                <div class="campo-contacto">
+                    <label for="email">Correo electrónico <span aria-hidden="true">*</span></label>
+                    <input id="email" name="email" type="email" autocomplete="email" required>
+                </div>
+
+                <div class="campo-contacto">
+                    <label for="telefono">Teléfono <span class="campo-opcional">(opcional)</span></label>
+                    <input id="telefono" name="telefono" type="tel" autocomplete="tel" inputmode="tel" placeholder="+54 11 1234 5678">
+                </div>
+
+                <div class="campo-contacto">
+                    <label for="tema">Motivo del mensaje <span aria-hidden="true">*</span></label>
+                    <select id="tema" name="tema" required>
+                        <option value="" selected>Elegí una opción</option>
+                        <option value="consulta">Consulta sobre el sitio</option>
+                        <option value="sugerencia">Sugerencia o comentario</option>
+                        <option value="musica">Recomendación musical</option>
+                        <option value="otro">Otro tema</option>
+                    </select>
+                </div>
+
+                <fieldset class="grupo-contacto">
+                    <legend>¿Cómo preferís que te respondamos? <span aria-hidden="true">*</span></legend>
+                    <label class="opcion-contacto">
+                        <input type="radio" name="preferencia" value="email" required>
+                        <span>Por correo electrónico</span>
+                    </label>
+                    <label class="opcion-contacto">
+                        <input type="radio" name="preferencia" value="telefono">
+                        <span>Por teléfono</span>
+                    </label>
+                </fieldset>
+
+                <div class="campo-contacto">
+                    <label for="mensaje">Tu mensaje <span aria-hidden="true">*</span></label>
+                    <textarea id="mensaje" name="mensaje" rows="5" minlength="10" maxlength="1000" required placeholder="Escribí al menos 10 caracteres"></textarea>
+                </div>
+
+                <label class="opcion-contacto consentimiento" for="consentimiento">
+                    <input id="consentimiento" name="consentimiento" type="checkbox" required>
+                    <span>Acepto que el equipo use estos datos para responder mi mensaje. <span aria-hidden="true">*</span></span>
+                </label>
+
+                <button class="boton-enviar" type="submit">Enviar mensaje</button>
+                <p class="nota-formulario">Los campos con * son obligatorios. Este formulario de demostración valida los datos en tu navegador y no los envía a un servidor.</p>
+            </form>
+        </main>
+
+        <footer class="pie-contacto">
+            Integrantes: Jael Luna · Roman Adris · Matias Joaquin Alteff  |  🔗 <a href="https://github.com/TheGhostBenito/ExploradorDeAlbumesDiscogs">github.com/grupoJRB/tp-final</a>  |  Datos: Discogs API
+        </footer>
+    </div>
+</body>
+</html>
+
+
+
